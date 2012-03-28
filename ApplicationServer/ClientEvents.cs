@@ -11,7 +11,9 @@ namespace ApplicationServer
 {
     public class ClientEvents
     {
-        private DAO dao = new DAO();
+        //private DAO dao = new DAO();
+        ApplicationServer.Tests.DAOMock dao = new Tests.DAOMock();
+
         private JsonProtocol jsonProtocol = new JsonProtocol();
 
         public ClientEvents()
@@ -112,7 +114,6 @@ namespace ApplicationServer
             Table table = new Table();
             table.TypesList = e.Command.TypesList;
             table.ValuesList = e.Command.ValuesList;
-            //dao.UpdatePerson(table);
             dao.UpdatePerson(int.Parse(e.Command.ValuesList.First().First().ToString()), e.Command.ValuesList.First());
         }
 
@@ -148,7 +149,7 @@ namespace ApplicationServer
             dao.AddPhoto(e.Command.File, int.Parse(e.Command.Data));
         }
 
-        void ClientEvents_ReadPhoto(object sender, SocketEventArgs e)
+        private void ClientEvents_ReadPhoto(object sender, SocketEventArgs e)
         {
             byte[] photo = dao.GetPhoto(int.Parse(e.Command.Data));
 
@@ -172,7 +173,7 @@ namespace ApplicationServer
             jsonProtocol.SendObject(command, (sender as ClientThread).Socket);
         }
 
-        public void ClientEvents_ReadPhotoLink(object sender, SocketEventArgs e)
+        private void ClientEvents_ReadPhotoLink(object sender, SocketEventArgs e)
         {
             using (FileStream fs = new FileStream(e.Command.Data + "_" + e.Command.FilePath, FileMode.Open))
             {

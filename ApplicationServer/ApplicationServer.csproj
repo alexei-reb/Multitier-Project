@@ -53,6 +53,7 @@
     <Compile Include="ClientsList.cs" />
     <Compile Include="ClientThread.cs" />
     <Compile Include="DAO.cs" />
+    <Compile Include="DAOMock.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

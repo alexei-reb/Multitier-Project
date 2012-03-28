@@ -1,43 +1,41 @@
-﻿using System.Collections.Generic;
-using System.Data;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using ORM;
 
-namespace ApplicationServer
+namespace ApplicationServer.Tests
 {
-    public class DAO
+    public class DAOMock
     {
-        SQLPersonDBEntities db = new SQLPersonDBEntities();
-        DataTable dataTable = new DataTable();
+        List<Person> dataBase = new List<Person>();
 
         public Table GetQuery(string data)
         {
-            var people = (from p in db.People
-                         select p).ToList();
+            List<Person> people = (from p in dataBase
+                                   select p).ToList();
             Table table = new Table();
             table.InitalizeTable(people);
-            
+
             return table;
         }
 
         public void UpdatePerson(int id, List<object> person)
         {
-            var dbPerson = (from p in db.People
-                                where p.ID == id
-                                select p).ToList();
+            var dbPerson = (from p in dataBase
+                            where p.ID == id
+                            select p).ToList();
             for (int i = 0; i < person.Count; i++)
             {
                 dbPerson.First()[i] = person[i];
             }
-            db.SaveChanges();
         }
 
         public void DeletePerson(object idObject)
         {
             int id = int.Parse(idObject.ToString());
-            var person = db.People.First(i => i.ID == id);
-            db.DeleteObject(person);
-            db.SaveChanges();
+            var person = dataBase.First(i => i.ID == id);
+            dataBase.Remove(person);
         }
 
         public void AddPerson(List<List<object>> list)
@@ -47,42 +45,37 @@ namespace ApplicationServer
             {
                 person[i] = list.First()[i];
             }
-            db.AddToPeople(person);
-            db.SaveChanges();
+            dataBase.Add(person);
         }
 
         public void AddPhoto(byte[] photo, int id)
         {
-            var person = db.People.First(i => i.ID == id);
+            var person = dataBase.First(i => i.ID == id);
             person.Photo = photo;
-            db.SaveChanges();
         }
 
         public byte[] GetPhoto(int id)
         {
-            var person = db.People.First(i => i.ID == id);
+            var person = dataBase.First(i => i.ID == id);
             return person.Photo;
         }
 
         public void SaveFile(int id, byte[] file)
         {
-            var person = db.People.First(i => i.ID == id);
+            var person = dataBase.First(i => i.ID == id);
             person.File = file;
-            db.SaveChanges();
         }
 
         public byte[] GetFile(int id)
         {
-            var person = db.People.First(i => i.ID == id);
+            var person = dataBase.First(i => i.ID == id);
             return person.File;
         }
 
         public void SetPhotoLinkName(string FileName, int id)
         {
-            var person = db.People.First(i => i.ID == id);
+            var person = dataBase.First(i => i.ID == id);
             person.PhotoLink = FileName;
-            db.SaveChanges();
         }
     }
 }
-

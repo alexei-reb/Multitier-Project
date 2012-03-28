@@ -36,7 +36,7 @@ namespace ApplicationServer
         private void Run(object state)
         {
             tcpListener.Start();
-
+            System.Diagnostics.Debug.Print("TcpListener started.");
             while (this.runFlag)
             {
                 NewConnection(tcpListener.AcceptTcpClient(), null);

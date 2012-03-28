@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ApplicationServer.Tests
 {
-    public class Person
+    public class Person1
     {
-        public static Person CreatePerson(global::System.Int32 id)
+        public static Person1 CreatePerson(global::System.Int32 id)
         {
-            Person person = new Person();
+            Person1 person = new Person1();
             person.ID = id;
             return person;
         }
