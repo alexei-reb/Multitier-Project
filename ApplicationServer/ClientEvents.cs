@@ -4,6 +4,8 @@ using ORM;
 using System.Xml.Serialization;
 using System.IO;
 using ApplicationServer.Properties;
+using System.Linq;
+using System.Text;
 
 namespace ApplicationServer
 {
@@ -110,7 +112,8 @@ namespace ApplicationServer
             Table table = new Table();
             table.TypesList = e.Command.TypesList;
             table.ValuesList = e.Command.ValuesList;
-            dao.UpdatePerson(table);
+            //dao.UpdatePerson(table);
+            dao.UpdatePerson(int.Parse(e.Command.ValuesList.First().First().ToString()), e.Command.ValuesList.First());
         }
 
         private void ClientEvents_DeleteRecord(object sender, SocketEventArgs e)

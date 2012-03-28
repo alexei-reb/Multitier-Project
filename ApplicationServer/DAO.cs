@@ -4,7 +4,6 @@ using System.Linq;
 using ORM;
 
 namespace ApplicationServer
-
 {
     public class DAO
     {
@@ -13,8 +12,11 @@ namespace ApplicationServer
 
         public Table GetQuery(string data)
         {
+            var people = (from p in db.People
+                         select p).ToList();
             Table table = new Table();
-            table.InitalizeTable(db.CreateObjectSet<Person>());
+            table.InitalizeTable(people);
+            
             return table;
         }
 
@@ -27,6 +29,18 @@ namespace ApplicationServer
             for (int i = 0; i < person.Length; i++)
             {
                 person[i] = values[i];
+            }
+            db.SaveChanges();
+        }
+
+        public void UpdatePerson(int id, List<object> person)
+        {
+            var dbPerson = (from p in db.People
+                                where p.ID == id
+                                select p).ToList();
+            for (int i = 0; i < person.Count; i++)
+            {
+                dbPerson.First()[i] = person[i];
             }
             db.SaveChanges();
         }

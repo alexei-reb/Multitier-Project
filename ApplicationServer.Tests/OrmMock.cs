@@ -5,7 +5,8 @@ using System.Text;
 
 namespace ApplicationServer.Tests
 {
-    class OrmMock
+    public class OrmMock
     {
+
     }
 }

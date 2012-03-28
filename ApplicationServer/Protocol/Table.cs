@@ -49,7 +49,7 @@ namespace ApplicationServer
             }
         }
 
-        public void InitalizeTable(ObjectQuery<Person> objectQuery)
+        public void InitalizeTable(List<Person> objectQuery)
         {
             GetPersonTypes();
             GetPersonColumnTitles();
