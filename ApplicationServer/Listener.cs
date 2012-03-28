@@ -31,12 +31,13 @@ namespace ApplicationServer
         {
             runFlag = false;
             System.Diagnostics.Debug.Print("Listener: Listener stopped.");
+            tcpListener.Stop();
         }
 
         private void Run(object state)
         {
             tcpListener.Start();
-            System.Diagnostics.Debug.Print("TcpListener started.");
+            System.Diagnostics.Debug.Print("TcpListener started on {0}.", tcpListener.LocalEndpoint.ToString());
             while (this.runFlag)
             {
                 NewConnection(tcpListener.AcceptTcpClient(), null);

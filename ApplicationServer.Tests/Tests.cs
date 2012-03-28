@@ -29,5 +29,10 @@ namespace ApplicationServer.Tests
             Server server2 = new Server(new Listener(endPoint), new ClientsManager());
             server2.Start();
         }
+
+        [Test]
+        public void ClientConnect()
+        {
+        }
     }
 }
