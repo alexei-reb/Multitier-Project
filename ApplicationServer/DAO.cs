@@ -1,16 +1,10 @@
-﻿using ORM;
-using System;
-using System.Text;
-using System.Linq;
-using System.Data.Linq;
-using System.Data.Objects;
-using System.Data.Objects.DataClasses;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Reflection;
+using System.Linq;
+using ORM;
 
 namespace ApplicationServer
+
 {
     public class DAO
     {

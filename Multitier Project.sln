@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServer.Tests", "ApplicationServer.Tests\ApplicationServer.Tests.csproj", "{1E3114A2-34BB-489D-9FFA-753FC706572D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,16 @@ Global
 		{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
