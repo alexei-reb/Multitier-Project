@@ -54,7 +54,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ICallbackEventHandlerImplementor.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -71,12 +71,12 @@
     </Compile>
     <Content Include="App_Code\Service.cs" />
     <Compile Include="Model\Command.cs" />
-    <Compile Include="ICallbackEventHandlerImplementor.aspx.cs">
-      <DependentUpon>ICallbackEventHandlerImplementor.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ICallbackEventHandlerImplementor.aspx.designer.cs">
-      <DependentUpon>ICallbackEventHandlerImplementor.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\JsonProtocol.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
