@@ -32,7 +32,6 @@ namespace ApplicationServer
             {
                 if (clientList[i].GetHashCode() == clientThread.GetHashCode())
                 {
-                    clientList[i].Socket.Close();
                     clientList.RemoveAt(i);
                     break;
                 }

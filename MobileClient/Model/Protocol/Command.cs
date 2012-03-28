@@ -38,7 +38,8 @@ namespace MobileClient
             DeleteRecord,
             Exit,
             Confirm,
-            Reject
+            Reject,
+            Timeout
         }
     }
 }

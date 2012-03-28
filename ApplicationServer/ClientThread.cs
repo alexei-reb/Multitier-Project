@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Sockets;
 using System.Threading;
+using ApplicationServer.Properties;
 
 namespace ApplicationServer
 {
@@ -11,13 +12,20 @@ namespace ApplicationServer
         private ClientEvents clientEvents = new ClientEvents();
         private TcpClient tcpClient;
         private JsonProtocol protocol = new JsonProtocol();
+        private System.Timers.Timer timer;
+        private int timeOut;
         #endregion
 
         #region Constructors
         public ClientThread(TcpClient tcpClient)
         {
             this.tcpClient = tcpClient;
+            timeOut = int.Parse(Resources.TimeOut);
+            timer = new System.Timers.Timer(timeOut);
+            timer.Elapsed += new System.Timers.ElapsedEventHandler(timer_Elapsed);
+            timer.Start();
         }
+
         #endregion
 
         #region Properties
@@ -49,6 +57,7 @@ namespace ApplicationServer
         {
             runFlag = false;
             ThreadStop(this, null);
+            tcpClient.Close();
             System.Diagnostics.Debug.Print("ClientThread: Client thread stopped");
         }
 
@@ -58,6 +67,7 @@ namespace ApplicationServer
             {
                 if (tcpClient.Available > 0)
                 {
+                    timer.Interval = timeOut;
                     try
                     {
                         Command command = protocol.ReadObject(tcpClient, typeof(Command)) as Command;
@@ -70,6 +80,13 @@ namespace ApplicationServer
                 }
                 Thread.Sleep(100);
             }
+        }
+
+        private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            protocol.SendObject(new Command(Command.Commands.Timeout, string.Empty), tcpClient);
+            System.Diagnostics.Debug.Print("Timeout!");
+            Stop();
         }
         #endregion
 

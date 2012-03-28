@@ -38,7 +38,8 @@ namespace DesktopClient
             DeleteRecord,
             Exit,
             Confirm,
-            Reject
+            Reject,
+            Timeout
         }
     }
 }

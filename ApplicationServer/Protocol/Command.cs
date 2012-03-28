@@ -35,7 +35,8 @@ namespace ApplicationServer
             DeleteRecord,
             Exit,
             Confirm,
-            Reject
+            Reject,
+            Timeout
         }
     }
 }

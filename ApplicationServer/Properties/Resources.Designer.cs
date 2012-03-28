@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ApplicationServer.Properties
-{
-
-
+namespace ApplicationServer.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -66,6 +66,15 @@ namespace ApplicationServer.Properties
         internal static string Buffer {
             get {
                 return ResourceManager.GetString("Buffer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1800000.
+        /// </summary>
+        internal static string TimeOut {
+            get {
+                return ResourceManager.GetString("TimeOut", resourceCulture);
             }
         }
     }

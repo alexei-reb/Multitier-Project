@@ -120,4 +120,7 @@
   <data name="Buffer" xml:space="preserve">
     <value>256</value>
   </data>
+  <data name="TimeOut" xml:space="preserve">
+    <value>1800000</value>
+  </data>
 </root>
