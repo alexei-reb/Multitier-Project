@@ -9,6 +9,9 @@ namespace ApplicationServer
         {
             CurrentCommand = Enum.GetName(typeof(Commands), command);
             Data = data;
+            ValuesList = new List<List<object>>();
+            ColumnsList = new List<string>();
+            TypesList = new List<string>();
         }
 
         public string CurrentCommand { get; set; }

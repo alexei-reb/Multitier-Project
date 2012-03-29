@@ -393,6 +393,7 @@ namespace ORM
         partial void OnFileChanged();
 
         #endregion
+        //my
         public object this[int index]
         {
             get

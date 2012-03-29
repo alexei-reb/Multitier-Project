@@ -92,10 +92,10 @@ namespace ApplicationServer
         private void ClientEvents_Exit(object sender, SocketEventArgs e)
         {
             ClientThread clientThread = sender as ClientThread;
-            clientThread.Stop();
             Command command = new Command(Command.Commands.Confirm, string.Empty);
-
             jsonProtocol.SendObject(command, clientThread.Socket);
+            clientThread.Stop();
+            
         }
 
         private void ClientEvents_FullData(object sender, SocketEventArgs e)
@@ -124,7 +124,6 @@ namespace ApplicationServer
 
         private void ClientEvents_AddRecord(object sender, SocketEventArgs e)
         {
-            Table table = new Table();
             dao.AddPerson(e.Command.ValuesList);
         }
 

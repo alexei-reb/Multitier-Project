@@ -25,8 +25,8 @@ namespace ApplicationServer
         #region Public Methods
         public void Start()
         {
-            listener.Start();
             clientManager.Start();
+            listener.Start();
             System.Diagnostics.Debug.Print("Server: Server started.");
         }
 

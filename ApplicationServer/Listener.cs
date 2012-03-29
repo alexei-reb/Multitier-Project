@@ -40,8 +40,15 @@ namespace ApplicationServer
             System.Diagnostics.Debug.Print("TcpListener started on {0}.", tcpListener.LocalEndpoint.ToString());
             while (this.runFlag)
             {
-                NewConnection(tcpListener.AcceptTcpClient(), null);
-                System.Diagnostics.Debug.Print("Listener: New client has been connected.");
+                try
+                {
+                    NewConnection(tcpListener.AcceptTcpClient(), null);
+                    System.Diagnostics.Debug.Print("Listener: New client has been connected.");
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.Print("Listener: Exception maessage. {0}", ex.Message);
+                }
             }
         }
 
