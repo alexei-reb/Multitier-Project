@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Net;
 
 namespace ApplicationServer
@@ -7,7 +8,10 @@ namespace ApplicationServer
     {
         static void Main(string[] args)
         {
-            IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse("192.168.56.1"), 8008);
+            String strHostName = Dns.GetHostName();
+            IPHostEntry iphostentry = Dns.GetHostByName(strHostName);
+
+            IPEndPoint endPoint = new IPEndPoint(iphostentry.AddressList.First(), 8008);
             Listener listener = new Listener(endPoint);
             ClientsManager clientManager = new ClientsManager();
             Server server = new Server(listener, clientManager);

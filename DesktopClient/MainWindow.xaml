@@ -9,6 +9,8 @@
         </Grid.ColumnDefinitions>
         <DataGrid Name="MainDataGrid" Grid.Column="0" AutoGenerateColumns="True" CellEditEnding="MainDataGrid_CellEditEnding" RowEditEnding="MainDataGrid_RowEditEnding" PreviewKeyDown="MainDataGrid_PreviewKeyDown" SelectionChanged="MainDataGrid_SelectionChanged" />
         <StackPanel Grid.Column="1">
+            <TextBox Name="IPTextBox" Text="0.0.0.0"/>
+            <TextBox Name="PortTextBox" Text="8008"/>
             <Button Name="ConnectButton" Content="Connect" Click="ConnectButton_Click"/>
             <Button Name="GetPersonTable" Content="Load Person table" Click="GetPersonTable_Click"/>
             <Button Name="LoadPhotoButton" Content="Load photo" Click="LoadPhotoButton_Click"/>

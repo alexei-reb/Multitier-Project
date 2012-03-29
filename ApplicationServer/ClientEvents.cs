@@ -11,8 +11,8 @@ namespace ApplicationServer
 {
     public class ClientEvents
     {
-        //private DAO dao = new DAO();
-        ApplicationServer.Tests.DAOMock dao = new Tests.DAOMock();
+        private DAO dao = new DAO();
+        //ApplicationServer.Tests.DAOMock dao = new Tests.DAOMock();
 
         private JsonProtocol jsonProtocol = new JsonProtocol();
 

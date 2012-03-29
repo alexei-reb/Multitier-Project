@@ -16,7 +16,6 @@ namespace ApplicationServer
                          select p).ToList();
             Table table = new Table();
             table.InitalizeTable(people);
-            
             return table;
         }
 
@@ -49,6 +48,16 @@ namespace ApplicationServer
             }
             db.AddToPeople(person);
             db.SaveChanges();
+        }
+
+        public void Add<T>(object obj)
+        {
+            db.AddObject(typeof(T).Name, obj);
+        }
+
+        public void Add(object obj)
+        {
+            db.AddObject(obj.GetType().Name, obj);
         }
 
         public void AddPhoto(byte[] photo, int id)

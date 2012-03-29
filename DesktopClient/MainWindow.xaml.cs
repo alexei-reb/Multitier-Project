@@ -9,6 +9,7 @@ using System;
 using System.Windows.Input;
 using Microsoft.Win32;
 using System.Windows.Media.Imaging;
+using System.Net;
 
 namespace DesktopClient
 {
@@ -24,7 +25,16 @@ namespace DesktopClient
 
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
-            presenter.Connect();
+            int port;
+            IPAddress ipAddress;
+            if (int.TryParse(PortTextBox.Text, out port) && IPAddress.TryParse(IPTextBox.Text, out ipAddress))
+            {
+                presenter.Connect(ipAddress, port);
+            }
+            else
+            {
+                MessageBox.Show("Wrong address format");
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

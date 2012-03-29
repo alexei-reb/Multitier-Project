@@ -28,11 +28,11 @@ namespace DesktopClient
         #endregion
 
         #region Client side Methods
-        public void Connect()
+        public void Connect(IPAddress ip, int port)
         {
             System.Diagnostics.Debug.Print("Client: Connect.");
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            protocol.Connect(new IPEndPoint(IPAddress.Parse("192.168.56.1"), 8008), ref socket);
+            protocol.Connect(new IPEndPoint(ip, port), ref socket);
             listener = new Listener(socket, this);
             listener.Start();
         }
