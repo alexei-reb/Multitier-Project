@@ -40,7 +40,7 @@
       <HintPath>..\..\DBProject\DBProject\bin\Debug\Aspose.Imaging.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\..\..\..\Downloads\Json45r1\Bin\Net40\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Json40r8\Bin\Net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SimplePsd">
       <HintPath>..\..\DBProject\DBProject\bin\Debug\SimplePsd.dll</HintPath>
