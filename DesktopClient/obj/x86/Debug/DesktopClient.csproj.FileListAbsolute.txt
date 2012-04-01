@@ -16,3 +16,5 @@ D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\Des
 D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\DesktopClient\bin\Debug\Newtonsoft.Json.xml
 D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\DesktopClient\bin\Debug\Aspose.Imaging.dll
 D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\DesktopClient\bin\Debug\SimplePsd.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\DesktopClient\obj\x86\Debug\DesktopClient.exe
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\DesktopClient\obj\x86\Debug\DesktopClient.pdb

@@ -1,0 +1,8 @@
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\bin\SQLPersonDB.mdf
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\bin\SQLPersonDB_log.ldf
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\bin\ORM.dll.config
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\bin\ORM.dll
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\bin\ORM.pdb
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\obj\Release\ResolveAssemblyReference.cache
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\obj\Release\ORM.dll
+c:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ORM\obj\Release\ORM.pdb

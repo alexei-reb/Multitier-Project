@@ -14,3 +14,6 @@ D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\App
 D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\ApplicationServer\bin\Debug\Newtonsoft.Json.xml
 D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\ApplicationServer\bin\Debug\SQLPersonDB.mdf
 D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\ApplicationServer\bin\Debug\SQLPersonDB_log.ldf
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ApplicationServer\bin\Debug\ApplicationServer.exe.config
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ApplicationServer\obj\x86\Debug\ApplicationServer.exe
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\ApplicationServer\obj\x86\Debug\ApplicationServer.pdb

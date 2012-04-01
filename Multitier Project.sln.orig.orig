@@ -8,21 +8,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopClient", "DesktopCli
 		{32BDB968-A687-4F87-8646-ADEC908D68E0} = {32BDB968-A687-4F87-8646-ADEC908D68E0}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileClient", "MobileClient\MobileClient.csproj", "{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{9E5F7A66-08C3-4DAA-BFEF-00AE6821D0F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}"
 EndProject
+<<<<<<< HEAD:Multitier Project.sln.orig
+<<<<<<< HEAD
+=======
+>>>>>>> 58f14feb3bd1630316700c38d737bca536a59df1:Multitier Project.sln
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServer.Tests", "ApplicationServer.Tests\ApplicationServer.Tests.csproj", "{1E3114A2-34BB-489D-9FFA-753FC706572D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsOnly", "TestsOnly\TestsOnly.csproj", "{92182368-648D-4404-8807-B694E111A64C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1C3DE18-B470-4060-9B02-3225DBDA30DC}"
-	ProjectSection(SolutionItems) = preProject
-		default.build = default.build
-	EndProjectSection
+<<<<<<< HEAD:Multitier Project.sln.orig
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{81F75B76-6A06-481F-97D3-F7B735FCE183}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}"
+>>>>>>> 0b578a29d151cd731cf3b224284b31b896ba64f1
 EndProject
+=======
+>>>>>>> 58f14feb3bd1630316700c38d737bca536a59df1:Multitier Project.sln
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,20 +58,6 @@ Global
 		{679139A8-7E5C-43AF-BDAD-4926E749D6F1}.Release|Mixed Platforms.Build.0 = Release|x86
 		{679139A8-7E5C-43AF-BDAD-4926E749D6F1}.Release|x86.ActiveCfg = Release|x86
 		{679139A8-7E5C-43AF-BDAD-4926E749D6F1}.Release|x86.Build.0 = Release|x86
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
-		{5D6862A0-327D-4E09-9CFF-2871A5E9F0A8}.Release|x86.ActiveCfg = Release|Any CPU
 		{9E5F7A66-08C3-4DAA-BFEF-00AE6821D0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E5F7A66-08C3-4DAA-BFEF-00AE6821D0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E5F7A66-08C3-4DAA-BFEF-00AE6821D0F9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -87,6 +78,10 @@ Global
 		{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{4CD5B14E-64F3-4537-B7D0-8BBE4AC19BA6}.Release|x86.ActiveCfg = Release|Any CPU
+<<<<<<< HEAD:Multitier Project.sln.orig
+<<<<<<< HEAD
+=======
+>>>>>>> 58f14feb3bd1630316700c38d737bca536a59df1:Multitier Project.sln
 		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3114A2-34BB-489D-9FFA-753FC706572D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -107,6 +102,31 @@ Global
 		{92182368-648D-4404-8807-B694E111A64C}.Release|Mixed Platforms.Build.0 = Release|x86
 		{92182368-648D-4404-8807-B694E111A64C}.Release|x86.ActiveCfg = Release|x86
 		{92182368-648D-4404-8807-B694E111A64C}.Release|x86.Build.0 = Release|x86
+<<<<<<< HEAD:Multitier Project.sln.orig
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{81F75B76-6A06-481F-97D3-F7B735FCE183}.Release|x86.ActiveCfg = Release|Any CPU
+=======
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D7AC9CC1-70D2-44CD-860D-385F8CC6C222}.Release|x86.ActiveCfg = Release|Any CPU
+>>>>>>> 0b578a29d151cd731cf3b224284b31b896ba64f1
+=======
+>>>>>>> 58f14feb3bd1630316700c38d737bca536a59df1:Multitier Project.sln
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

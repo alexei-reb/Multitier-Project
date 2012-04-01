@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+    <project name="Hello World" default="build" basedir=".">
+        <description>Calculator</description>
+  <property name="debug" value="true" overwrite="false" />
+  <property name="Solution.Filename" value="ApplicationServer/ApplicationServer.csproj"/>
+  <target name="build">
+   <msbuild project="${Solution.Filename}">
+    <property name="Configuration" value="Release" />
+    <property name="OutDir" value="bin/" />
+   </msbuild>
+  
+  </target>
+
+</project>
