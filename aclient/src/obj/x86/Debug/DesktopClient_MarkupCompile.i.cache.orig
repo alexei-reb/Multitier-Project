@@ -1,0 +1,32 @@
+﻿DesktopClient
+
+
+winexe
+C#
+.cs
+<<<<<<< HEAD:DesktopClient/obj/x86/Debug/DesktopClient_MarkupCompile.i.cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\DesktopClient\obj\x86\Debug\
+=======
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\DesktopClient\src\obj\x86\Debug\
+>>>>>>> 4c6a2a5df3b2680b77a00f341165485617a4cc72:aclient/src/obj/x86/Debug/DesktopClient_MarkupCompile.i.cache
+DesktopClient
+none
+false
+DEBUG;TRACE
+<<<<<<< HEAD:DesktopClient/obj/x86/Debug/DesktopClient_MarkupCompile.i.cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\Multitier-Project\DesktopClient\App.xaml
+11151548125
+
+18-757846552
+151683533966
+=======
+D:\Documents\Dropbox\Education\Visual Studio 2010\Projects\Multitier Project\DesktopClient\src\App.xaml
+11151548125
+
+181863472889
+15-1043631477
+>>>>>>> 4c6a2a5df3b2680b77a00f341165485617a4cc72:aclient/src/obj/x86/Debug/DesktopClient_MarkupCompile.i.cache
+MainWindow.xaml;
+
+False
+
